@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
+        tools:context=".activities.MainActivity"
         android:padding="10dp">
 
     <Button
@@ -30,10 +30,12 @@
             android:text="Share to other apps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true" android:id="@+id/btnShareToOtherApps" android:layout_marginBottom="158dp"/>
+            android:layout_alignParentBottom="true" android:id="@+id/btnShareToOtherApps"
+            android:layout_marginBottom="158dp"/>
     <Button
             android:text="Recycler view demo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true" android:id="@+id/btnRecyclerViewDemo" android:layout_marginBottom="89dp"/>
+            android:layout_alignParentBottom="true" android:id="@+id/btnRecyclerViewDemo"
+            android:layout_marginBottom="89dp"/>
 </RelativeLayout>
