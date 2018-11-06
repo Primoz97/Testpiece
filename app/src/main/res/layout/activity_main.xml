@@ -9,7 +9,7 @@
         android:padding="10dp">
 
     <Button
-            android:text="Show Toast"
+            android:text="@string/btn_show_toast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true" android:id="@+id/btnShowToast" android:layout_marginTop="43dp"/>
@@ -17,23 +17,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:hint="Enter your message"
+            android:hint="@string/et_enter_msg"
             android:ems="10"
             android:layout_alignParentEnd="true" android:layout_marginEnd="15dp"
             android:id="@+id/etUserMessage" android:layout_marginTop="142dp" android:layout_alignParentTop="true"/>
     <Button
-            android:text="Send data to next activity"
+            android:text="@string/btn_move_to_next_activity"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:id="@+id/btnSendMsgToNextActivity" android:layout_centerInParent="true"/>
     <Button
-            android:text="Share to other apps"
+            android:text="@string/btn_share_to_apps"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true" android:id="@+id/btnShareToOtherApps"
             android:layout_marginBottom="158dp"/>
     <Button
-            android:text="Recycler view demo"
+            android:text="@string/btn_hobbies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true" android:id="@+id/btnRecyclerViewDemo"
