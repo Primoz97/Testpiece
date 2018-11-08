@@ -1,4 +1,4 @@
-package com.google.testpiece
+package com.google.StudentguideforLjubljana
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.google.testpiece
+package com.google.StudentguideforLjubljana
 
 import org.junit.Test
 

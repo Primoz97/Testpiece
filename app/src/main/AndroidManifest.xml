@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.google.testpiece">
+          package="com.google.StudentguideforLjubljana">
 
     <application
             android:allowBackup="true"
@@ -9,7 +9,7 @@
             android:roundIcon="@mipmap/ic_launcher_shareapp_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
+        <activity android:name="com.google.StudentguideforLjubljana.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.SecondActivity" />
-        <activity android:name=".activities.HobbiesActivity" />
+        <activity android:name="com.google.StudentguideforLjubljana.activities.SecondActivity" />
+        <activity android:name="com.google.StudentguideforLjubljana.activities.Restaurants.Restaurants" />
 
 
     </application>

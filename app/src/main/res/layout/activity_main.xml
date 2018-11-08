@@ -6,21 +6,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activities.MainActivity"
-        android:padding="10dp">
+        android:padding="0dp">
 
-    <Button
-            android:text="@string/btn_show_toast"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
-            android:layout_alignParentTop="true" android:id="@+id/btnShowToast" android:layout_marginTop="43dp"/>
+    <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_alignParentStart="true" android:layout_marginStart="5dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="5dp"
+            android:layout_marginTop="1dp"
+            android:adjustViewBounds="false" android:cropToPadding="false"
+            app:srcCompat="@android:color/holo_green_dark"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[1]" android:background="@color/colorPrimary"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:hint="@string/et_enter_msg"
             android:ems="10"
-            android:layout_alignParentEnd="true" android:layout_marginEnd="15dp"
-            android:id="@+id/etUserMessage" android:layout_marginTop="142dp" android:layout_alignParentTop="true"/>
+            android:layout_alignParentEnd="true" android:layout_marginEnd="0dp"
+            android:id="@+id/etUserMessage" android:layout_marginTop="2dp" android:layout_alignParentTop="true"/>
     <Button
             android:text="@string/btn_move_to_next_activity"
             android:layout_width="match_parent"
@@ -33,9 +37,18 @@
             android:layout_alignParentBottom="true" android:id="@+id/btnShareToOtherApps"
             android:layout_marginBottom="158dp"/>
     <Button
-            android:text="@string/btn_hobbies"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true" android:id="@+id/btnRecyclerViewDemo"
-            android:layout_marginBottom="89dp"/>
+            android:id="@+id/btnRestaurants"
+            android:text="@string/btn_restaurants"
+            android:layout_width="180dp" android:layout_height="70dp"
+            android:layout_alignParentTop="true" android:layout_marginTop="50dp"
+            android:layout_alignParentStart="true" android:layout_marginStart="10dp"/>
+    <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="360px" android:layout_height="180px"
+            android:layout_alignParentTop="true" android:layout_marginTop="50dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/logo_restaurants" tools:srcCompat="@drawable/logo_restaurants"
+            android:scaleType="fitXY" android:background="@color/cardview_light_background"
+            android:adjustViewBounds="false" android:cropToPadding="false"/>
+
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.google.testpiece
+package com.google.StudentguideforLjubljana
 
 import android.content.Context
 import android.widget.Toast

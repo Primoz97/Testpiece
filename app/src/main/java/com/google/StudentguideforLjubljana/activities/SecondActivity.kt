@@ -1,11 +1,10 @@
-package com.google.testpiece.activities
+package com.google.StudentguideforLjubljana.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.Toast
-import com.google.testpiece.Constants
-import com.google.testpiece.R.layout.activity_second
-import com.google.testpiece.showToast
+import com.google.StudentguideforLjubljana.Constants
+import com.google.StudentguideforLjubljana.R.layout.activity_second
+import com.google.StudentguideforLjubljana.showToast
 import kotlinx.android.synthetic.main.activity_second.*
 
 class SecondActivity : AppCompatActivity() {

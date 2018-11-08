@@ -1,4 +1,4 @@
-package com.google.testpiece.adapters
+package com.google.StudentguideforLjubljana.adapters
 
 import android.content.Context
 import android.content.Intent
@@ -6,17 +6,15 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
-import com.google.testpiece.models.Hobby
-import com.google.testpiece.R
-import com.google.testpiece.activities.MainActivity
-import com.google.testpiece.showToast
+import com.google.StudentguideforLjubljana.R
+import com.google.StudentguideforLjubljana.models.Resto
+import com.google.StudentguideforLjubljana.showToast
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>(){
+class RestaurantsAdapter(val context: Context, private val restaurants: List<Resto>) : RecyclerView.Adapter<RestaurantsAdapter.MyViewHolder>(){
 
     companion object {
-        val TAG: String = HobbiesAdapter::class.java.simpleName
+        val TAG: String = RestaurantsAdapter::class.java.simpleName
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, ViewGroup: Int): MyViewHolder {
@@ -25,31 +23,31 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : R
     }
 
     override fun getItemCount(): Int {
-        return hobbies.size
+        return restaurants.size
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val hobby = hobbies[position]
-        holder.setData(hobby, position)
+        val resto = restaurants[position]
+        holder.setData(resto, position)
     }
 
     inner  class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var currentHobby: Hobby? = null
+        var currentResto: Resto? = null
         var currentPosition: Int = 0
 
         init {
             itemView.setOnClickListener {
-                currentHobby?.let {
-                    context.showToast(currentHobby!!.title + "Clicked !")
+                currentResto?.let {
+                    context.showToast(currentResto!!.title + "Clicked !")
                 }
             }
 
             itemView.imgShare.setOnClickListener{
 
-                currentHobby?.let{
+                currentResto?.let{
 
-                    val message: String = "My hobby is: " + currentHobby!!.title
+                    val message: String = "My hobby is: " + currentResto!!.title
 
                     val  intent = Intent()
                     intent.action = Intent.ACTION_SEND
@@ -62,11 +60,11 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : R
             }
         }
 
-        fun setData(hobby: Hobby?, pos: Int) {
-            hobby?.let {
-                itemView.txvTitle.text = hobby!!.title
+        fun setData(resto: Resto?, pos: Int) {
+            resto?.let {
+                itemView.txvTitle.text = resto!!.title
             }
-            this.currentHobby = hobby
+            this.currentResto = resto
             this.currentPosition = pos
         }
     }

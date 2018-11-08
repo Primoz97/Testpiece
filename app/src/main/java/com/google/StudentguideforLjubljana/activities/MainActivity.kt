@@ -1,13 +1,14 @@
-package com.google.testpiece.activities
+package com.google.StudentguideforLjubljana.activities
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.google.testpiece.Constants
-import com.google.testpiece.R
-import com.google.testpiece.showToast
+import com.google.StudentguideforLjubljana.Constants
+import com.google.StudentguideforLjubljana.R
+import com.google.StudentguideforLjubljana.activities.Restaurants.Restaurants
+import com.google.StudentguideforLjubljana.showToast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -20,10 +21,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnShowToast.setOnClickListener {
-            Log.i(TAG, "Button was clicked !")
-            showToast(resources.getString(R.string.btn_was_clickd), Toast.LENGTH_LONG)
-        }
+        //btnShowToast.setOnClickListener {
+        //    Log.i(TAG, "Button was clicked !")
+        //    showToast(resources.getString(R.string.btn_was_clickd), Toast.LENGTH_LONG)
+        //}
 
         btnSendMsgToNextActivity.setOnClickListener {
             val message: String = etUserMessage.text.toString()
@@ -45,9 +46,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent.createChooser(intent, "Share to : "))
         }
 
-        btnRecyclerViewDemo.setOnClickListener {
+        btnRestaurants.setOnClickListener {
 
-            val intent = Intent(this, HobbiesActivity::class.java)
+            val intent = Intent(this, Restaurants::class.java)
             startActivity(intent)
         }
 
