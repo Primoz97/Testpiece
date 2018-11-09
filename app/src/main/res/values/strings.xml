@@ -2,7 +2,7 @@
     <string name="app_name">Student guide for Ljubljana</string>
 
     <string name="btn_show_toast">Show Toast</string>
-    <string name="btn_move_to_next_activity">Move to next activity</string>
+    <string name="btn_move_to_next_activity">Msg</string>
     <string name="btn_share_to_apps">Share to other apps</string>
     <string name="btn_restaurants">Restaurants</string>
     <string name="et_enter_msg">Enter a message</string>

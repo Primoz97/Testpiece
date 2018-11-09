@@ -1,22 +1,23 @@
-package com.google.StudentguideforLjubljana.activities.Restaurants
+package com.google.StudentguideforLjubljana.activities.maincategory
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import com.google.StudentguideforLjubljana.adapters.RestaurantsAdapter
 import com.google.StudentguideforLjubljana.R
-import com.google.StudentguideforLjubljana.models.Supplier
+import com.google.StudentguideforLjubljana.adapters.BarsAdapter
+import com.google.StudentguideforLjubljana.models.SupplierBars
 import kotlinx.android.synthetic.main.restaurants.*
 
-class Restaurants : AppCompatActivity() {
+
+class Bars : AppCompatActivity() {
 
     companion object {
-        val TAG: String = Restaurants::class.java.simpleName
+        val TAG: String = Bars::class.java.simpleName
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.restaurants)
+        setContentView(R.layout.bars)
 
 
         setupRecyclerView()
@@ -28,7 +29,7 @@ class Restaurants : AppCompatActivity() {
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = layoutManager
 
-        val adapter = RestaurantsAdapter(this, Supplier.restaurants)
+        val adapter = BarsAdapter(this, SupplierBars.bars)
         recyclerView.adapter = adapter
     }
 }

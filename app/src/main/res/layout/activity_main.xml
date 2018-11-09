@@ -15,40 +15,50 @@
             android:layout_alignParentEnd="true" android:layout_marginEnd="5dp"
             android:layout_marginTop="1dp"
             android:adjustViewBounds="false" android:cropToPadding="false"
-            app:srcCompat="@android:color/holo_green_dark"
-            tools:srcCompat="@tools:sample/backgrounds/scenic[1]" android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"/>
     <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:id="@+id/etUserMessage"
             android:hint="@string/et_enter_msg"
-            android:ems="10"
-            android:layout_alignParentEnd="true" android:layout_marginEnd="0dp"
-            android:id="@+id/etUserMessage" android:layout_marginTop="2dp" android:layout_alignParentTop="true"/>
+            android:layout_width="250dp" android:layout_height="50dp"
+            android:layout_alignParentTop="true" android:layout_marginTop="5dp"
+            android:layout_alignParentStart="true" android:layout_marginStart="10dp"
+            android:ems="10" android:inputType="textPersonName"/>
+
+
     <Button
+            android:id="@+id/btnSendMsgToNextActivity"
             android:text="@string/btn_move_to_next_activity"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:id="@+id/btnSendMsgToNextActivity" android:layout_centerInParent="true"/>
+            android:layout_width="110dp" android:layout_height="50dp"
+            android:layout_alignParentTop="true" android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="10dp"/>
     <Button
             android:text="@string/btn_share_to_apps"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true" android:id="@+id/btnShareToOtherApps"
-            android:layout_marginBottom="158dp"/>
-    <Button
-            android:id="@+id/btnRestaurants"
-            android:text="@string/btn_restaurants"
-            android:layout_width="180dp" android:layout_height="70dp"
-            android:layout_alignParentTop="true" android:layout_marginTop="50dp"
-            android:layout_alignParentStart="true" android:layout_marginStart="10dp"/>
+            android:layout_marginBottom="90dp" android:layout_alignParentStart="true"/>
+
     <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="360px" android:layout_height="180px"
-            android:layout_alignParentTop="true" android:layout_marginTop="50dp"
-            android:layout_alignParentEnd="true" android:layout_marginEnd="10dp"
+            android:id="@+id/btnRestaurants"
+            android:layout_width="180dp" android:layout_height="90dp"
+            android:layout_alignParentTop="true" android:layout_marginTop="60dp"
+            android:layout_alignParentStart="true" android:layout_marginStart="10dp"
             app:srcCompat="@drawable/logo_restaurants" tools:srcCompat="@drawable/logo_restaurants"
             android:scaleType="fitXY" android:background="@color/cardview_light_background"
             android:adjustViewBounds="false" android:cropToPadding="false"/>
+    <ImageButton
+            android:id="@+id/btnBars"
+            android:layout_width="180dp" android:layout_height="90dp"
+            android:layout_alignParentTop="true" android:layout_marginTop="60dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/logo_bar"
+            android:scaleType="fitXY" android:background="@color/cardview_light_background"/>
+    <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="180dp" android:layout_height="90dp"
+            android:layout_alignParentStart="true" android:layout_marginStart="10dp"
+            android:layout_alignParentTop="true"  android:layout_marginTop="160dp"
+            app:srcCompat="@drawable/logo_copy_shops"
+            android:scaleType="fitXY" android:background="@color/cardview_light_background"/>
 
 </RelativeLayout>

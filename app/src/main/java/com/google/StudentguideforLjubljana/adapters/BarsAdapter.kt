@@ -7,14 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.StudentguideforLjubljana.R
-import com.google.StudentguideforLjubljana.models.Resto
+import com.google.StudentguideforLjubljana.models.Ba
 import com.google.StudentguideforLjubljana.showToast
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class RestaurantsAdapter(val context: Context, private val restaurants: List<Resto>) : RecyclerView.Adapter<RestaurantsAdapter.MyViewHolder>(){
+class BarsAdapter(val context: Context, private val bars: List<Ba>) : RecyclerView.Adapter<BarsAdapter.MyViewHolder>(){
 
     companion object {
-        val TAG: String = RestaurantsAdapter::class.java.simpleName
+        val TAG: String = BarsAdapter::class.java.simpleName
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, ViewGroup: Int): MyViewHolder {
@@ -23,31 +23,31 @@ class RestaurantsAdapter(val context: Context, private val restaurants: List<Res
     }
 
     override fun getItemCount(): Int {
-        return restaurants.size
+        return bars.size
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val resto = restaurants[position]
-        holder.setData(resto, position)
+        val ba = bars[position]
+        holder.setData(ba, position)
     }
 
     inner  class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var currentResto: Resto? = null
+        var currentBa: Ba? = null
         var currentPosition: Int = 0
 
         init {
             itemView.setOnClickListener {
-                currentResto?.let {
-                    context.showToast(currentResto!!.title + " Clicked !")
+                currentBa?.let {
+                    context.showToast(currentBa!!.title + " Clicked !")
                 }
             }
 
             itemView.imgShare.setOnClickListener{
 
-                currentResto?.let{
+                currentBa?.let{
 
-                    val message: String = "Restaurants: " + currentResto!!.title
+                    val message: String = "Bars: " + currentBa!!.title
 
                     val  intent = Intent()
                     intent.action = Intent.ACTION_SEND
@@ -60,11 +60,11 @@ class RestaurantsAdapter(val context: Context, private val restaurants: List<Res
             }
         }
 
-        fun setData(resto: Resto?, pos: Int) {
-            resto?.let {
-                itemView.txvTitle.text = resto!!.title
+        fun setData(ba: Ba?, pos: Int) {
+            ba?.let {
+                itemView.txvTitle.text = ba!!.title
             }
-            this.currentResto = resto
+            this.currentBa = ba
             this.currentPosition = pos
         }
     }
