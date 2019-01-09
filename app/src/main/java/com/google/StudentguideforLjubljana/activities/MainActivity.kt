@@ -3,10 +3,14 @@ package com.google.StudentguideforLjubljana.activities
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.EventLogTags
+import android.widget.ListView
 import com.google.StudentguideforLjubljana.Constants
 import com.google.StudentguideforLjubljana.R
 import com.google.StudentguideforLjubljana.activities.maincategory.Bars
+import com.google.StudentguideforLjubljana.activities.maincategory.PrintandCopy
 import com.google.StudentguideforLjubljana.activities.maincategory.Restaurants
+import com.google.android.gms.maps.MapsInitializer
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,25 +29,18 @@ class MainActivity : AppCompatActivity() {
         //}
 
 
-        btnSendMsgToNextActivity.setOnClickListener {
-            val message: String = etUserMessage.text.toString()
-            val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra(Constants.USER_MSG_KEY, message)
+        btnDescription.setOnClickListener {
 
+            val intent = Intent(this, EventLogTags.Description::class.java)
             startActivity(intent)
         }
 
-        btnShareToOtherApps.setOnClickListener {
+        btnMaps.setOnClickListener {
 
-            val message: String = etUserMessage.text.toString()
-
-            val  intent = Intent()
-            intent.action = Intent.ACTION_SEND
-            intent.putExtra(Intent.EXTRA_TEXT, message)
-            intent.type = "text/plain"
-
-            startActivity(Intent.createChooser(intent, "Share to : "))
+            val intent = Intent(this, MapsInitializer::class.java)
+            startActivity(intent)
         }
+
 
         btnRestaurants.setOnClickListener {
 
@@ -56,5 +53,13 @@ class MainActivity : AppCompatActivity() {
             val intent =  Intent(this, Bars::class.java)
             startActivity(intent)
         }
+
+        btnPrintandCopy.setOnClickListener {
+
+            val intent = Intent(this, PrintandCopy::class.java)
+            startActivity(intent)
+        }
     }
 }
+
+
