@@ -18,10 +18,12 @@
         </activity>
 
 
-        <activity android:name="com.google.StudentguideforLjubljana.activities.maincategory.Restaurants" />
+        <activity android:name="com.google.StudentguideforLjubljana.activities.maincategory.Restaurants.Restaurants" />
         <activity android:name="com.google.StudentguideforLjubljana.activities.maincategory.Bars"/>
         <activity android:name="com.google.StudentguideforLjubljana.activities.maincategory.PrintandCopy"/>
         <activity android:name="com.google.StudentguideforLjubljana.activities.Mainpanel.Description"/>
+        <activity android:name="com.google.StudentguideforLjubljana.activities.maincategory.Restaurants.Detailrestaurants"/>
+
 
     </application>
 

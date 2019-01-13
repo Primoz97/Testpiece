@@ -4,12 +4,10 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.EventLogTags
-import android.widget.ListView
-import com.google.StudentguideforLjubljana.Constants
 import com.google.StudentguideforLjubljana.R
 import com.google.StudentguideforLjubljana.activities.maincategory.Bars
 import com.google.StudentguideforLjubljana.activities.maincategory.PrintandCopy
-import com.google.StudentguideforLjubljana.activities.maincategory.Restaurants
+import com.google.StudentguideforLjubljana.activities.maincategory.Restaurants.Restaurants
 import com.google.android.gms.maps.MapsInitializer
 import kotlinx.android.synthetic.main.activity_main.*
 

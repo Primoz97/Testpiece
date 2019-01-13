@@ -6,7 +6,7 @@ import android.support.v7.widget.LinearLayoutManager
 import com.google.StudentguideforLjubljana.R
 import com.google.StudentguideforLjubljana.adapters.PrintandCopyAdapter
 import com.google.StudentguideforLjubljana.models.SupplierPandc
-import kotlinx.android.synthetic.main.restaurants.*
+import kotlinx.android.synthetic.main.printandcopy.*
 
 class PrintandCopy : AppCompatActivity() {
 

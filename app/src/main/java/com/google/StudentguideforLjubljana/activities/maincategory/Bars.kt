@@ -6,7 +6,7 @@ import android.support.v7.widget.LinearLayoutManager
 import com.google.StudentguideforLjubljana.R
 import com.google.StudentguideforLjubljana.adapters.BarsAdapter
 import com.google.StudentguideforLjubljana.models.SupplierBars
-import kotlinx.android.synthetic.main.restaurants.*
+import kotlinx.android.synthetic.main.bars.*
 
 
 class Bars : AppCompatActivity() {
