@@ -5,8 +5,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.EventLogTags
 import com.google.StudentguideforLjubljana.R
-import com.google.StudentguideforLjubljana.activities.maincategory.Bars
-import com.google.StudentguideforLjubljana.activities.maincategory.PrintandCopy
+import com.google.StudentguideforLjubljana.activities.maincategory.Bars.Bars
+import com.google.StudentguideforLjubljana.activities.maincategory.Printandcopy.PrintandCopy
 import com.google.StudentguideforLjubljana.activities.maincategory.Restaurants.Restaurants
 import com.google.android.gms.maps.MapsInitializer
 import kotlinx.android.synthetic.main.activity_main.*

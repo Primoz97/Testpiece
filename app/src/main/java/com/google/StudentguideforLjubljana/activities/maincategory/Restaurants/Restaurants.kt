@@ -29,6 +29,11 @@ class Restaurants : AppCompatActivity() {
         var landmarkProp = ArrayList<String>()
         landmarkProp.add("Location: Knafijev prehod 2, 1000 Ljubljana, " +
                 "Price of a meal: 7,00€, Supplement for coupon: 4,37€")
+        landmarkProp.add("Location: Tržaška coesta 5, 1000 Ljubljana, " +
+                "Price of a meal: 7,00€, Supplement for coupon: 4,37€")
+        landmarkProp.add("Location: Kapitelska, 1000 Ljubljana, " +
+                "Price of a meal: 7,00€, Supplement for coupon: 4,37€")
+
 
 
         val mexicana = BitmapFactory.decodeResource(applicationContext.resources,R.drawable.mexicana)

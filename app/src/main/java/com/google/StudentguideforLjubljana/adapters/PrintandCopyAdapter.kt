@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.StudentguideforLjubljana.R
-import com.google.StudentguideforLjubljana.activities.maincategory.PrintandCopy
 import com.google.StudentguideforLjubljana.models.Pandc
 import com.google.StudentguideforLjubljana.showToast
 import kotlinx.android.synthetic.main.list_item.view.*

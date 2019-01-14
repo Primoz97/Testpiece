@@ -9,7 +9,6 @@ import kotlinx.android.synthetic.main.detail_restaurants.*
 class Detailrestaurants: AppCompatActivity() {
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.detail_restaurants)
@@ -26,6 +25,6 @@ class Detailrestaurants: AppCompatActivity() {
         val chosen = GlobalsR.Chosen
         val selectedImage = chosen.returnImage()
 
-        imageView.setImageBitmap(selectedImage)
+        imageViewR.setImageBitmap(selectedImage)
     }
 }
