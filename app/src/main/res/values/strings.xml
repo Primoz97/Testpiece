@@ -6,15 +6,15 @@
     <string name="btnDescription">Description</string>
     <string name="btn_maps">Map</string>
 
-    <string name="btn_was_clickd">Button was clicked ! </string>
+    <string name="btn_was_clickd">Button was clicked !</string>
 
 
-
-    <string name="descriptiontext" >
+    <string name="descriptiontext">
         This application was made to help students to easily navigate in Ljubljana city.
 
 
     </string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

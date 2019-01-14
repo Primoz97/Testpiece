@@ -3,12 +3,10 @@ package com.google.StudentguideforLjubljana.activities
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.EventLogTags
 import com.google.StudentguideforLjubljana.R
 import com.google.StudentguideforLjubljana.activities.maincategory.Bars.Bars
 import com.google.StudentguideforLjubljana.activities.maincategory.Printandcopy.PrintandCopy
 import com.google.StudentguideforLjubljana.activities.maincategory.Restaurants.Restaurants
-import com.google.android.gms.maps.MapsInitializer
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -27,15 +25,15 @@ class MainActivity : AppCompatActivity() {
         //}
 
 
-        btnDescription.setOnClickListener {
+       // btnDescription.setOnClickListener {
 
-            val intent = Intent(this, EventLogTags.Description::class.java)
-            startActivity(intent)
-        }
+        //    val intent = Intent(this, Description::class.java)
+        //    startActivity(intent)
+        //}
 
         btnMaps.setOnClickListener {
 
-            val intent = Intent(this, MapsInitializer::class.java)
+            val intent = Intent(this, MapsActivity::class.java)
             startActivity(intent)
         }
 
