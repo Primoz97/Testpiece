@@ -25,11 +25,11 @@ class MainActivity : AppCompatActivity() {
         //}
 
 
-       // btnDescription.setOnClickListener {
+        btnDescription.setOnClickListener {
 
-        //    val intent = Intent(this, Description::class.java)
-        //    startActivity(intent)
-        //}
+            val intent = Intent(this, Description::class.java)
+            startActivity(intent)
+        }
 
         btnMaps.setOnClickListener {
 
