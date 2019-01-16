@@ -60,9 +60,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
                     if (p0 != null){
 
-                        mMap.clear()
 
-                        val userLocation = LatLng(p0!!.latitude,p0!!.longitude)
+
+                        val userLocation = LatLng(p0.latitude,p0.longitude)
                         mMap.addMarker(MarkerOptions().position(userLocation).title("Your Location"))
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation,15f))
 
@@ -121,8 +121,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 var address = ""
 
                 try {
-                    val addressList = geocoder.getFromLocation(p0!!.latitude, p0!!.longitude,1)
-
+                    val addressList = geocoder.getFromLocation(p0!!.latitude, p0.longitude,1)
+9
                     if (addressList != null && addressList.size > 0) {
 
                         if (addressList[0].thoroughfare != null) {
